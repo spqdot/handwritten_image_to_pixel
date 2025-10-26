@@ -9,6 +9,7 @@ from io import BytesIO
 st.set_page_config(layout="wide")
 st.title("✏️ Draw & Convert: Handwritten Digit Visualizer")
 
+
 st.markdown("""
 Draw a digit in the canvas below.  
 This app converts your drawing into a **28×28 grayscale image** (like MNIST) and displays the pixel values.
@@ -80,6 +81,8 @@ if canvas_result.image_data is not None:
         file_name="digit_28x28.png",
         mime="image/png"
     )
+    st.markdown("**Made by Shrabani** 💫")
 else:
 
     st.info("Draw a digit in the canvas above to begin.")
+
