@@ -7,7 +7,7 @@ from io import BytesIO
 
 # --- PAGE CONFIG ---
 st.set_page_config(layout="wide")
-st.title("🖊️ Handwritten Digit → Pixel Image Visualizer")
+st.title("✏️ Draw & Convert: Handwritten Digit Visualizer")
 
 st.markdown("""
 Draw a digit in the canvas below.  
@@ -81,4 +81,5 @@ if canvas_result.image_data is not None:
         mime="image/png"
     )
 else:
+
     st.info("Draw a digit in the canvas above to begin.")
